@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>平面設計成品分享 (49款) | 黃立賢 (Alan)</title>
+  <meta name="description" content="黃立賢 (Alan) 在職累計產出近千件平面設計物料，涵蓋戶外大型看板、公車廣告、汽機車雜誌特刊、展場等身立牌、促銷文宣海報與周邊票卡。" />
+  <meta name="theme-color" content="#FBFBFD" />
+
+  <!-- Google Fonts: Space Grotesk, Noto Sans TC, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            apple: {
+              bg: '#FBFBFD',
+              surface: '#F5F5F7',
+              card: '#FFFFFF',
+              border: '#E5E5EA',
+              text: '#1D1D1F',
+              body: '#424245',
+              muted: '#6E6E73',
+              blue: '#0071E3'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+  <!-- 1. Top Glass Navigation Bar with Breadcrumb -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Back to Home -->
+      <a href="index.html" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-sky-400 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        <span>返回主簡歷首頁</span>
+      </a>
+
+      <!-- Page Title -->
+      <div class="hidden sm:flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-blue-600 live-beacon"></span>
+        <span class="text-xs font-mono font-semibold text-slate-900 dark:text-white">平面設計成品分享 (49 款真實案例)</span>
+      </div>
+
+      <!-- Theme Switcher -->
+      <div class="flex items-center gap-3">
+        <button id="themeToggleBtn" class="p-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all shadow-sm" aria-label="切換深色/淺色主題" title="切換主題風格">
+          <svg id="themeIconDark" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg id="themeIconLight" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 2. Main Gallery Page Content -->
+  <main class="flex-grow pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Page Header Banner -->
+      <div class="text-center max-w-3xl mx-auto py-8 reveal-on-scroll">
+        <span class="text-xs font-mono text-blue-600 dark:text-sky-400 uppercase tracking-wider px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 font-semibold">Complete Portfolio</span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white mt-3">平面設計成品分享</h1>
+        <p class="text-slate-600 dark:text-slate-400 mt-3 text-sm sm:text-base">
+          在職累計產出近千件平面設計物料。點擊任一卡片可開啟高畫質 Lightbox 燈箱，支援鍵盤 <kbd class="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700 text-xs">←</kbd> <kbd class="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700 text-xs">→</kbd> 與 <kbd class="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700 text-xs">Esc</kbd> 快捷鍵。
+        </p>
+      </div>
+
+      <!-- Search Bar & Filters Section -->
+      <div class="apple-card p-4 sm:p-6 mb-8 reveal-on-scroll delay-100">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <!-- Real-time Search Input -->
+          <div class="relative w-full md:w-80">
+            <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" id="gallerySearchInput" placeholder="搜尋作品名稱或關鍵字 (例: 勁戰、公車、立牌)..." class="w-full pl-10 pr-4 py-2.5 rounded-xl text-xs sm:text-sm bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:border-blue-600 transition-colors" />
+          </div>
+
+          <!-- Total Count Display -->
+          <div class="text-xs font-mono text-slate-500">
+            顯示作品數：<span id="galleryCountSpan" class="font-bold text-slate-900 dark:text-white">49</span> / 49 款
+          </div>
+
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+          <button class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-900 text-white dark:bg-white dark:text-black transition-all shadow-sm" data-filter="all">全部 (49)</button>
+          <button class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 transition-all" data-filter="billboard">戶外大看板與大廳</button>
+          <button class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 transition-all" data-filter="magazine">雜誌廣告與跨頁</button>
+          <button class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 transition-all" data-filter="transit">車體廣告與插牌</button>
+          <button class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 transition-all" data-filter="exhibition">展場背板與立牌</button>
+          <button class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 transition-all" data-filter="poster">海報、文宣與布旗</button>
+          <button class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 transition-all" data-filter="card">周邊卡片與貼紙</button>
+        </div>
+      </div>
+
+      <!-- 49 Works Grid Container -->
+      <div id="fullGalleryContainer" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 reveal-on-scroll delay-200">
+        <!-- Dynamically rendered via main.js -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-8 text-center text-xs text-slate-500 font-mono">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 黃立賢 (Alan). All rights reserved. ｜ <a href="index.html" class="hover:text-blue-600 underline">返回主簡歷首頁</a>
+      </div>
+      <div>
+        <a href="#fullGalleryContainer" class="hover:text-blue-600 transition-colors">回到頁首 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Markup -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true">
+    <button id="lightboxClose" class="absolute top-6 right-6 z-50 p-2.5 rounded-full bg-slate-800/80 text-white hover:bg-rose-600 transition-all" aria-label="關閉燈箱">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <button id="lightboxPrev" class="absolute left-6 top-1/2 -translate-y-1/2 z-50 p-3 rounded-full bg-slate-800/80 text-white hover:bg-blue-600 transition-all" aria-label="上一張">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button id="lightboxNext" class="absolute right-6 top-1/2 -translate-y-1/2 z-50 p-3 rounded-full bg-slate-800/80 text-white hover:bg-blue-600 transition-all" aria-label="下一張">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <div class="lightbox-img-wrapper flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="" class="lightbox-img mb-4" />
+      <div class="text-center max-w-xl px-4">
+        <div class="flex items-center justify-center gap-2 mb-1">
+          <span id="lightboxBadge" class="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-blue-600 text-white">物料</span>
+          <span id="lightboxCounter" class="text-[11px] font-mono text-slate-300">1 / 49</span>
+        </div>
+        <h3 id="lightboxTitle" class="text-base font-bold text-white">作品標題</h3>
+        <p id="lightboxDesc" class="text-xs text-slate-300 mt-0.5 font-light">作品詳細說明</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastMsg" class="toast-msg">
+    <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+    <span id="toastText">已複製到剪貼簿</span>
+  </div>
+
+  <!-- Back to top floating button -->
+  <button id="backToTopBtn" class="fixed bottom-8 right-8 z-40 p-3 rounded-full bg-slate-900 text-white dark:bg-white dark:text-black border border-slate-200 dark:border-slate-700 shadow-xl opacity-0 pointer-events-none hover:scale-110 transition-all" aria-label="回到頂部">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/scroll-observer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
