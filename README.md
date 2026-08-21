@@ -1,3 +1,3 @@
 # my-resume
-我的簡歷
+關於我
 https://cynthia1070711.github.io/my-resume/
